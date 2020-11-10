@@ -1,0 +1,111 @@
+#nav-id {
+    background-color: rgb(180, 243, 151);
+    /* text-align: center; */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#header-id .bg-image {
+    position: absolute;
+    /* showcase div me fit krna*/
+    background: #333 url('assets/pexels.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    /* behind the text*/
+    opacity: 0.4;
+}
+
+#header-id h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#header-id .content-wrap {
+    padding: 0 1.5em;
+}
+
+#section-a {
+    background: #eaeaea;
+    padding-bottom: 2em;
+}
+
+#section-a .content-wrap {
+    padding: 0 1.5em;
+}
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b .card {
+    margin-bottom: 1em;
+    background: #fff;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+#section-c {
+    background: #fff;
+    padding: 2em;
+}
+
+#main-footer {
+    color: blue;
+    text-decoration: none;
+}
+
+a {
+    color: blue;
+}
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content-wrap,
+    #section-b .card {
+        grid-column: 1/4;
+    }
+    #main-footer p {
+        grid-column: span 2;
+    }
+    #section-b {
+        display: flex;
+        justify-content: space-around;
+    }
+    .card img {
+        display: block;
+        width: 100%;
+        height: 35em;
+    }
+    #section-b .card {
+        width: 100%;
+        height: 60em;
+        justify-content: space-around;
+    }
+}
