@@ -1,5 +1,7 @@
 #nav-id {
     background-color: rgb(180, 243, 151);
+    height: 3.2em;
+    font-size: 1.4em;
     /* text-align: center; */
 }
 
@@ -68,14 +70,29 @@ p {
     padding: 1.5em;
 }
 
-#section-c {
-    background: #fff;
-    padding: 2em;
+#section-c .bg-image {
+    position: absolute;
+    background: #333 url('table-tennis.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.hobby-card h4 {
+    padding-top: 0.1;
+    /* margin-top: 0%; */
+    margin-bottom: 0%;
 }
 
 #main-footer {
     color: blue;
     text-decoration: none;
+    background-color: #eaeaea;
+    margin-top: 10%
 }
 
 a {
@@ -91,26 +108,60 @@ a {
     #section-b .card {
         grid-column: 1/4;
     }
+    #nav-id {
+        padding-top: 1.1em;
+    }
+    .content-wrap,
+    #section-b .card-1 {
+        grid-column: 1/4;
+    }
     #main-footer p {
         grid-column: span 2;
     }
     #section-b {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    #section-c .bg-image {
+        position: absolute;
+        background: #333 url('table-tennis.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60%;
+        z-index: -1;
+        opacity: 0.4;
     }
     .card img {
         padding-top: 1%;
         display: block;
         width: 80%;
         height: 40em;
-        margin-left: 10%;
+        margin-left: 19%;
+        align-self: flex-end;
+    }
+    .card-1 img {
+        padding-top: 1%;
+        display: block;
+        width: 80%;
+        height: 40em;
+        /* margin-left: 10%; */
+        align-self: flex-end;
     }
     #section-b .card {
         width: 100%;
         height: 60em;
-        justify-content: space-around;
+    }
+    #section-b .card-1 {
+        width: 100%;
+        height: 60em;
+        background-color: #fff;
     }
     .card {
+        padding-bottom: 1.3em;
+    }
+    .card-1 {
         padding-bottom: 1.3em;
     }
 }
